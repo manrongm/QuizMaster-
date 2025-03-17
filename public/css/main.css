@@ -1,0 +1,212 @@
+/* Add all your CSS here */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #92b593;
+    padding: 15px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a.active {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+.questions-container {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-form button {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-form button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.questions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.questions-table th, .questions-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.questions-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.questions-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.questions-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.add-question-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.add-question-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 25%;
+}
+
+.add-question-form button {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-question-form button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.quiz-container label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.quiz-container input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.quiz-container button {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.quiz-container button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.correction-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.correct-answer {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.incorrect-answer {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

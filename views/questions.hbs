@@ -1,0 +1,37 @@
+<section class="questions-container">
+    <h2>Questionnaire</h2>
+
+    <form action="/questions" method="GET" class="search-form">
+        <input type="text" name="search" placeholder="Search questions..." value="{{searched}}">
+        <button type="submit">Search</button>
+    </form>
+
+    <form action="/questions" method="POST" class="add-question-form">
+        <input type="text" name="question" placeholder="Enter your question" required>
+        <input type="text" name="genre" placeholder="Enter genre" required>
+        <input type="text" name="answers" placeholder="Enter comma-separated answers" required>
+        <button type="submit">Add</button>
+    </form>
+
+
+    <table class="questions-table">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Genre</th>
+                <th>Answers</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each queries}}
+            <tr>
+                <td>{{this.question}}</td>
+                <td>{{this.genre}}</td>
+                <td>{{this.answers}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+
+

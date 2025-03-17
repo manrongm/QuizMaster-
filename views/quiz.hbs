@@ -1,0 +1,23 @@
+<section class="quiz-container">
+    <h2>Quiz</h2>
+
+    {{#if question}}
+        <form action="/quiz" method="POST">
+            <label for="answer">{{question.question}}</label>
+            <input type="hidden" name="id" value="{{question.id}}">
+            <input type="text" id="answer" name="answer" value="{{userAnswer}}" placeholder="Enter your answer..." required>
+            <button type="submit">Submit</button>
+        </form>
+    {{else}}
+        <p>No questions available. Please add some questions.</p>
+    {{/if}}
+
+    {{#if correction}}
+        <div class="correction-container">
+            <p>{{result}}</p>
+            <p>{{{correction}}}</p>
+        </div>
+    {{/if}}
+</section>
+
+
