@@ -1,6 +1,6 @@
-# 🎯 QuizMaster - Interactive Trivia Game  
+# 🎯 QuizMaster - Interactive Quiz Application
 
-**An engaging Node.js-powered trivia game where users can attempt questions, validate answers, and contribute new quiz questions dynamically.**  
+**An engaging Node.js-powered trivia web application where users can attempt questions, validate answers, and contribute new quiz questions dynamically.**  
 
 ---
 
